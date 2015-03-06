@@ -64,7 +64,7 @@ if __FILE__ == $PROGRAM_NAME
     m = buffer.length - 1
     m.times { |i|
         j = i + 1
-        d = EarthSurfaceDistance.Calculate(buffer[i], buffer[j])
+        d = EarthSurfaceDistance::Calculate(buffer[i], buffer[j])
         printf("[%s => %s]\t%f\n", buffer[i].name, buffer[j].name, d)
         total += d
     }
